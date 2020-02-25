@@ -33,6 +33,7 @@ requirements:
     - eigen
   run:
     - python
+    - pip
     - ase
     - pandas
     - scikit-learn
