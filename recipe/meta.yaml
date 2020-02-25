@@ -40,6 +40,8 @@ requirements:
 test:
   imports:
     - icet
+  commands:
+    - pip check
 
 about:
   home: https://icet.materialsmodeling.org
