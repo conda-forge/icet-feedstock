@@ -10,7 +10,7 @@ source:
   sha256: 51bb1d7412beaebaf7bc7f80e801c573b53c04f90da9e8df254b633e491cd4ab
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win or py2k]
 
@@ -61,3 +61,4 @@ about:
 extra:
   recipe-maintainers:
     - jan-janssen
+    - erhart1
