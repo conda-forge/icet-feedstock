@@ -38,6 +38,7 @@ requirements:
     - ase
     - pandas
     - scikit-learn
+    - numba
 
 test:
   imports:
