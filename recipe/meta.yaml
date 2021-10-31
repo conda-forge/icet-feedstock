@@ -1,5 +1,5 @@
 {% set name = "icet" %}
-{% set version = "1.4" %}
+{% set version = "2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 42c17218f686cc5d1dd3c425ec69e3c8060a63a7ded7073d4b957868968e1bc1
+  sha256: a183ab4f25d0b78d32407d73063cd5b8dc9ebd34fe100df517418d3cc9bd6d5e
 
 build:
   number: 0
@@ -38,6 +38,8 @@ requirements:
     - ase
     - pandas
     - scikit-learn
+    - numba
+    - trainstation
 
 test:
   imports:
