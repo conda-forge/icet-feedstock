@@ -39,6 +39,7 @@ requirements:
     - pandas
     - scikit-learn
     - numba
+    - trainstation
 
 test:
   imports:
