@@ -24,7 +24,7 @@ requirements:
     - pip
     - ase
     - pandas
-    - numpy
+    - numpy <1.21
     - scipy
     - scikit-learn
     - spglib
