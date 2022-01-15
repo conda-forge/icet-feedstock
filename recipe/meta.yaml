@@ -37,6 +37,7 @@ requirements:
     - pybind11
     - ase
     - pandas
+    - numpy <1.21
     - scikit-learn
     - numba
     - trainstation
