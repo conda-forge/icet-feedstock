@@ -10,9 +10,8 @@ source:
   sha256: 4c32c7998ce61f996dcbf091439b1ab62108d639cba15ff17128307de00bdec1
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [win or py2k]
 
 requirements:
   build:
@@ -39,6 +38,7 @@ requirements:
     - pandas
     - numpy <1.21
     - scikit-learn
+    - spglib
     - numba
     - trainstation
 
