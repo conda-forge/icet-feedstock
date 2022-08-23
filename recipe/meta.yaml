@@ -39,6 +39,7 @@ requirements:
     - pandas
     - numpy <1.21
     - scikit-learn
+    - spglib
     - numba
     - trainstation
 
