@@ -228,4 +228,5 @@ Feedstock Maintainers
 
 * [@erhart1](https://github.com/erhart1/)
 * [@jan-janssen](https://github.com/jan-janssen/)
+* [@rozyczko](https://github.com/rozyczko/)
 
