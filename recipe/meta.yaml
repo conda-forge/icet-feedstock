@@ -1,5 +1,5 @@
 {% set name = "icet" %}
-{% set version = "2.1" %}
+{% set version = "2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4c32c7998ce61f996dcbf091439b1ab62108d639cba15ff17128307de00bdec1
+  sha256: fc0757874042644b8a2bbbd6bde41cbfe4d8c024659cfcc9a7d66e3a1eb167a9
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
