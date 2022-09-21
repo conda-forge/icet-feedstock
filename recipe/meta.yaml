@@ -35,6 +35,8 @@ test:
     - icet
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://icet.materialsmodeling.org
