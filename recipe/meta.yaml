@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 9c9ac9053532c58772add8e4948879f3302ea16099d6bcb2865816963ed8cc86
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<=38]
 
@@ -23,6 +23,7 @@ requirements:
     - pip
     - python
     - pybind11
+    - setuptools
   run:
     - ase
     - numba
