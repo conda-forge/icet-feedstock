@@ -23,6 +23,7 @@ requirements:
     - pip
     - python
     - pybind11
+    - setuptools
   run:
     - ase
     - numba
