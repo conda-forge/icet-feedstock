@@ -1,0 +1,61 @@
+schema_version: 1
+
+context:
+  name: icet
+  version: "3.2"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 858fd1b2193b77f2fafb32b7cf9ea733d3e71fe2dbf75252679c12f72bf9470b
+
+build:
+  number: 2
+  skip: win
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+  host:
+    - pip
+    - python
+    - pybind11
+    - setuptools
+  run:
+    - ase
+    - numba
+    - numpy
+    - pandas >=0.23
+    - python
+    - scipy
+    - spglib >1.12.0
+    - trainstation >=0.2
+
+tests:
+  - python:
+      imports:
+        - icet
+      pip_check: true
+
+about:
+  license: MPL-2.0
+  license_file: LICENSE.txt
+  summary: icet — A Pythonic approach to cluster expansions
+  description: |
+    icet is a tool for the construction and sampling of alloy cluster
+    expansions.
+  homepage: https://icet.materialsmodeling.org
+  repository: https://gitlab.com/materials-modeling/icet
+  documentation: https://icet.materialsmodeling.org
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
+    - erhart1
+    - rozyczko
