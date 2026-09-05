@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: icet
-  version: "3.2"
+  version: "4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 858fd1b2193b77f2fafb32b7cf9ea733d3e71fe2dbf75252679c12f72bf9470b
+  sha256: afa64d64038321a71c62cf93836b7b6dc122652595d1123ceadb2385294547d1
 
 build:
-  number: 2
+  number: 0
   skip: win
   script: ${{ PYTHON }} -m pip install . -vv
 
